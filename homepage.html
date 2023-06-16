@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cradle of Beauty</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="hp_script.js"></script>
+</head>
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+            <a class="w3-bar-item w3-button">Touch with care</a>
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button">About</a>
+                <a href="#products" class="w3-bar-item w3-button">Products</a>
+                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+                <a href="#account" class="w3-bar-item w3-button" onclick="openAccount()">
+                    <span id="account-name">Account</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="account" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width: 600px;">
+            <div class="w3-container">
+                <span onclick="document.getElementById('account').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                <h1>My Account</h1>
+                <hr>
+                <a href="#" class="w3-bar-item w3-button">Cart</a>
+                <div class="w3-dropdown-hover">
+                    <button class="w3-button">Purchases</button>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="#" class="w3-bar-item w3-button">To Pay</a>
+                        <a href="#" class="w3-bar-item w3-button">To Ship</a>
+                        <a href="#" class="w3-bar-item w3-button">To Receive</a>
+                        <a href="#" class="w3-bar-item w3-button">To Rate</a>
+                    </div>
+                </div>
+                <a href="#" class="w3-bar-item w3-button w3-right w3-hide-small" onclick="logout()">
+                    <i class="fa fa-sign-out"></i></a>
+            </div>
+        </div>
+    </div>
+    <img src="photo.JPG">
+    <div class="w3-content" style="max-width:1100px">
+        <div class="w3-row w3-padding-64" id="about">
+            <div class="w3-col m6 w3-padding-large w3-hide-small"><br><br>
+                <br><br><img src="photo2.jpg" class="w3-round w3-image w3-opacity-min" width="600" height="750">
+            </div>
+            <hr>
+            <div class="w3-col m6 w3-padding-large">
+                <h1 class="w3-center">About</h1>
+                <h5 class="w3-center"><i>Invest in your skin</i></h5>
+                <p class="w3-medium">Cradle of Beauty is a sanctuary for those seeking top-quality beauty treatments. The name itself evokes feelings of warmth, protection, and care, much like a cradle does for a newborn. At Cradle of Beauty, we believe that our clients deserve the same level of care and attention as a precious little ones. That's why we've formulated our skincare products with budget-friendly, naturally-derived ingredients that offer numerous benefits for the skin.<br>
+                    <br> Our range of products is designed to provide hydration, nourishment, and protection from environmental stressors, making them ideal for those with sensitive or reactive skin. We prioritize the use of natural ingredients in our formulations, as we believe that they are gentler on the skin than synthetic alternatives. Additionally, we support eco-friendly and ethical companies that care about both our consumers and the environment.<br>
+                    <br> At Cradle of Beauty, we are committed to nurturing and caring for beauty like a newborn in its cradle. Our affordable yet top-quality beauty treatments are designed to pamper and nourish the skin, just like a mother would do for her child. We strive to deliver on our promise by offering top-notch skincare solutions that make you feel as good as they look. So come and experience the comfort, support, and care that Cradle of Beauty has to offer. <b><i>We'll take care of everything, and you'll leave feeling refreshed, rejuvenated, and beautiful.</i></b>
+            </div>
+        </div>
+        <hr>
+        <div class="w3-row w3-padding-64" id="products">
+            <div class="w3-center l6 w3-padding-10">
+                <h1 class="w3-center">Products</h1><br>
+                <h4>Cleanser</h4>
+                <p class="w3-text-grey">It deep cleans and removes all of the dirt, makeup, and impurities that have accumulated over the day.</p><br>
+                <h4>Toner</h4>
+                <p class="w3-text-grey">It removes any remaining dirt, grime, and impurities in your pores after washing your face.</p><br>
+                <h4>Serum</h4>
+                <p class="w3-text-grey">It boosts collagen in your skin, keeping it firm and plumping out fine lines and wrinkles.</p><br>
+                <h4>Eye cream</h4>
+                <p class="w3-text-grey">It reduces the appearance of wrinkles, dark circles, and puffiness.</p><br>
+                <h4>Moisturizer</h4>
+                <p class="w3-text-grey">It can help keep your skin moisturized and refreshed.</p><br>
+                <h4>Sunscreen</h4>
+                <p class="w3-text-grey">It protects against sunburn, skin cancer, and premature aging.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="w3-container w3-padding-10" id="contact">
+            <h1>Contact</h1><br>
+            <p>For the love of beauty — let's get in touch. Send us a message:</p>
+            <p><i class="fa fa-map-marker fa-fw w3-text-black w3-xlarge w3-margin-right"></i>Bukidnon, Philippines</p>
+            <p><i class="fa fa-phone fa-fw w3-text-black w3-xlarge w3-margin-right"></i>+123456789</p>
+            <p><i class="fa fa-envelope-open fa-fw w3-text-black w3-xlarge w3-margin-right"></i>cradleofbeauty@gmail.com</p>
+        </div>
+    </div>
+    </div>
+    <br><br><br>
+    <script src="hp_script.js"></script>
+    <footer class="w3-center w3-light-grey w3-padding-32" style="letter-spacing:7px;">
+        <h4> &copy;Google Images</h>
+    </footer>
+</body>
+</html>
